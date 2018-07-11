@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice6</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</head>
+<body ng-app >
+  <button type="button" ng-click="myVar=true" name="Afficher"> Afficher</button>
+  <button type="button" ng-click="myVar=false" name="Cacher">Cacher</button>
+
+  <div ng-show ="myVar">
+  <p>Para 1</p>
+  </div>
+  <div ng-hide ="myVar">
+    <p>Para 2</p>
+  </div>
+
+</html>

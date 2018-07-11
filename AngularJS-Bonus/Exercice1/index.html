@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bonus 1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</head>
+<body ng-app>
+  <form name="myForm" action="index.html" method="post">
+    <label for="mail">Email</label>
+    <input ng-model="Email" type="email" name="mail"  placeholder="tonemail@domaine.com" required>
+  </form>
+  <div class="valid" ng-show="myForm.mail.$valid"></div>
+  <div ng-show="myForm.mail.$error.required">email requise</div>
+<style>
+.valid {
+  border: 1px solid green;
+  background-color: green;
+  width: 13%;
+}
+.invalid{
+border: 1px solid red;
+background-color: red;
+width: 13%;
+text-align: center;
+}
+</style>
+
+  <div class="invalid" ng-show="myForm.mail.$error.email">email invalide</div> <!--Vérifier la validité de l'input email-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</body>
+</html>
+
+
+<!-- <body ng-app>
+  <h2>Validation Example</h2>
+  <form name="Mail">
+    <p>Email:<br>
+      <!On crée un input email-->
+      <!-- <input type="email" name="email" ng-model="email" required>
+        <!--On sélectionne myForm, puis name = email, puis si c'est vide ($error.required) un message est renvoyé-->
+        <!-- <span ng-show="Mail.email.$error.required">Email is required.</span>
+        <!--On sélectionne myForm, puis name = email, puis si le mail n'est pas correcte ($error.email  type email), un message est renvoyé-->
+        <!-- <span style="color:red" ng-show="Mail.email.$error.email">Invalid email address.</span>
+        <!--Si l'adresse mail est valide, on affiche un message-->
+        <!-- <span style="color:green" ng-show="Mail.email.$valid-key.email">Mail valide</span>
+    </p>
+  </form>
+</body> --> --> --> --> -->
